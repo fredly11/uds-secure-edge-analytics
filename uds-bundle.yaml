@@ -1,0 +1,14 @@
+kind: UDSBundle
+metadata:
+  name: uds-core-eks-demo
+  description: UDS Core on existing EKS cluster
+  version: "0.1.0"
+
+packages:
+  - name: init
+    repository: ghcr.io/zarf-dev/packages/init
+    ref: v0.55.0
+
+  - name: core
+    repository: registry.defenseunicorns.com/public/core
+    ref: latest
